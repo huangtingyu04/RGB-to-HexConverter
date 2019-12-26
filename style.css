@@ -1,0 +1,80 @@
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+
+* {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html {
+ text-align: center;
+ background-color: #000000;
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+
+}
+.slider{
+  margin: 10px;
+  
+}
+.slider span, .slider label {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  border-radius: 3px;
+  padding: 7px;
+  text-align: center;
+  line-height: 10px;
+  font-weight: 900;
+}
+.slider span {
+   width: 30px;
+   height: 10px;
+  border-radius: 3px;
+  padding: 7px;
+}
+.red span, .red label{
+  background-color: rgb(255, 0, 0);
+ }
+.green span, .green label{
+   background-color: rgb(0, 255, 0);
+ }
+ .blue span, .blue label{
+   background-color: rgb(0, 0, 255);
+ }
+input {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  background: 	#C0C0C0;
+  outline: none; 
+  vertical-align: middle;
+}
+input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+  background: #F8F8F8; /* White background */
+  cursor: pointer; /* Cursor on hover */
+}
+.hex-value {
+  color: #000000;
+  width: 210px;
+  height: 75px;
+  border-radius: 5px;
+  line-height: 75px;
+  padding: 0 10px;
+  background-color: 	rgb(255,255,255,.3);
+  font-weight: 900;
+  font-size: 3em;
+}
